@@ -1,0 +1,474 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box; 
+ font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0; padding: 0; box-sizing: border-box; 
+    background-color: #000;
+   width: 100%;
+  
+
+}
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000 
+  url('../image/preloader.gif');
+  background-repeat:  no-repeat;
+  background-position: center;
+  z-index:99999;
+}
+
+.box{
+  width: 80%;
+  border: 1px solid orange;
+}
+
+
+/*---------------------------------------------------header--------------------------------------------*/
+
+header{
+  height: 100vh; width: 100%;
+  margin-bottom: 40px;
+  background-color: black;
+   }
+
+
+.hero{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.left-col{
+  flex-basis: 30%;
+  height: 100%;
+  background: orange;
+  opacity: 1;
+  height: 65%;
+}
+
+.quote-text1{
+    width:350px;
+    top: 145px;
+    left: 20px;
+    position: absolute;
+    text-align: right;
+   }
+
+
+.quote-text1 img{
+ width: 80%;
+ height: 80%;
+ border-radius: 50%;
+ position: relative;
+ left: -10%;
+ margin-top: 45px;
+}
+
+.right-col{
+  flex-basis: 70%;
+  height: 100%;
+}
+
+.quote-text2{
+    width:600px;
+    top: 200px;
+    right: 20px;
+    position: absolute;
+    color: #fff;
+    text-align: right; 
+}
+
+.quote-text2 h1{
+   font-size: 40px;
+   font-weight: 800;
+   color: #333333;
+   position: relative;
+   right: 10%;
+}
+
+.quote-text1 h1{
+  color: #000;
+  text-align: right;
+  font-size: 40px;
+  opacity: 0.8;
+}
+
+
+ .btn button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 13px 0;
+  background: transparent;
+  position: absolute;
+  top: 80%;
+  right: 15%;
+  cursor: pointer;
+}
+
+.btn a button{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+  border: 1px solid orange;  
+}
+
+.btn a button:hover{
+  color: #fff;
+  background: #000;
+  border: 1px solid #000; 
+  transition: 0.5s;
+}
+
+
+.container-fluid{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main h1{
+   text-align: center;
+}
+ .process{
+  margin: 40px auto;
+  padding: 40px;
+ }
+
+ .process h1{
+  text-align: center;
+  margin-bottom: 40px;
+ }
+
+#demo h1{
+  text-align: center;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+/*-----------------------------------------------main---------------------------------------------------------*/
+
+
+main{
+  width:100%;
+  height: auto;
+  background-color: #fff;
+  padding: 10px;
+ 
+}
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .copyright{
+    text-align: center;
+    color: #666;
+    position: relative;
+    top: 40px;
+  }
+
+     
+
+
+/*--------------------------------------------------------footer-------------------------------------------*/
+  
+footer{
+  height: 120vh; width: 100%;
+  background-color: #000;
+}
+
+ 
+.arrowup{
+  font-size: 15px;
+}
+
+.arrowup a{
+  color: #fff;
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  top: 110vh;
+}
+
+.contact_form{
+  margin-left: 40px;
+  margin-right: 40px;
+ text-align: center;
+}
+
+
+form{
+  margin-top: 60px;
+}
+
+.panel{
+  margin-left: 15px;
+  text-align: left;
+  color: orange;
+  position: relative;
+  bottom: -100px;
+
+}
+ .nav{
+  float: right;
+  position: relative;
+  top: 150px;
+  right: 40px;
+  text-decoration: none;
+ }
+
+ .nav ul li a{
+  text-decoration: none;
+ }
+
+
+/*///////////////scroll bar//////////////*/
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  border: 1.5px solid #666666;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(
+    45deg,
+    #ccc,#ccc);
+  border-radius: 10px;
+}
+/*/////////////media quries//////////*/
+/*@media (min-width: 1366px) {
+
+footer{
+  height: 60vh; width: 100%;
+}
+
+.arrowup a{
+  color: #fff;
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  top: 54vh;
+}
+
+
+header{
+  height: 50vh; width: 100%;
+  background-color: black;
+   }
+
+  .btn button{
+  width: 180px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.quote-text1 img{
+ position: relative;
+ left: 1%;
+
+}
+
+.left-col{
+  height: 75%;
+}
+
+.quote-text1 h1{
+  position: relative;
+   left: -20%;
+}
+}
+
+
+@media (max-width: 1024px) {
+
+footer{
+  height: 60vh; width: 100%;
+}
+
+.arrowup a{
+  color: #fff;
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  top: 54vh;
+}
+
+
+header{
+  height: 50vh; width: 100%;
+  background-color: black;
+   }
+
+  .btn button{
+  width: 180px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.quote-text1 img{
+ position: relative;
+ left: 1%;
+
+}
+
+.left-col{
+  height: 75%;
+}
+
+.quote-text1 h1{
+  position: relative;
+   left: -20%;
+}
+}
+
+@media (min-width: 420px) {
+
+.btn button{
+ 
+  position: absolute;
+  top: 85%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.left-col{
+  height: 50%;
+}
+
+footer{
+  height: 110vh; width: 100%;
+}
+
+.arrowup a{
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  top: 90vh;
+}
+}*/
+ 
+ @media (max-width: 419px) {
+
+
+#loading{
+  position: fixed;
+  width: 50%;
+  height: 50%;
+ }
+
+.quote-text2{
+    width:500px;
+    top: 540px;
+    right: -25px;
+    position: absolute;
+    text-align: right; 
+   }
+
+.quote-text2 h1{
+   font-size: 25px;
+   font-weight: 600;
+   color: #333333;
+   position: relative;
+   right: 6%;
+}
+.quote-text1 img{
+  width: 67%;
+ height: 67%;
+ border-radius: 50%;
+ position: relative;
+ left: -10%;
+ margin-top: -150px;
+}
+
+ .btn button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 13px 0;
+  background: transparent;
+  box-shadow: 1.5px #000;
+  position: absolute;
+  top: 73%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.quote-text1 h1{
+  color: #000;
+  text-align: left;
+  font-size: 25px;
+  opacity: 0.8;
+  position: relative;
+  top: 20vh;
+}
+
+.left-col{
+  flex-basis: 60%;
+  opacity: 1;
+  height: 57%;
+top: 50px;
+position: relative;
+  
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+  }
+
+.carousel-inner button{
+  position: relative;
+  top: -80px;
+  left: -150px;
+  margin-top: 10px;
+}
+
+.panel{
+  display: inline-block;
+  margin-left: 15px;
+  text-align: left;
+  color: orange;
+  position: relative;
+  bottom: 10px;
+  font-size: 15px;
+
+}
+
+.nav{
+  float: right;
+  position: relative;
+  top: 170px;
+  right: 40px;
+  text-decoration: none;
+ }
+
+ .nav ul li a{
+  text-decoration: none;
+ }
+}
+
+
+ /*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/**/
+
+  /*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+
